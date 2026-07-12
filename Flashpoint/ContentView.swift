@@ -22,8 +22,8 @@ struct ContentView: View {
             RadialGradient(
                 gradient: Gradient(stops: [
                     .init(color: .clear,                                        location: 0.30),
-                    .init(color: .black.opacity(0.55),                          location: 0.72),
-                    .init(color: .black.opacity(0.88),                          location: 1.00),
+                    .init(color: .black.opacity(0.38),                          location: 0.74),
+                    .init(color: .black.opacity(0.72),                          location: 1.00),
                 ]),
                 center: .center,
                 startRadius: 0,
@@ -115,7 +115,7 @@ struct ScanLineOverlay: View {
             while y < size.height {
                 ctx.fill(
                     Path(CGRect(x: 0, y: y, width: size.width, height: 1)),
-                    with: .color(.black.opacity(0.07))
+                    with: .color(.black.opacity(0.04))
                 )
                 y += spacing
             }
